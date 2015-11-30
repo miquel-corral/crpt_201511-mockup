@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> | 'CRPT - City Resilience Profile Tool'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/crpt.css" media="screen"></head>
+<body>
+    <div class="container">
+        
+<div id="crpt-header">
+<div class="page-header" style="margin: 18px 0px 18px;" id="banner">
+    <div class="row  header">
+        <div class="col-lg-2 header-city header-height">
+            Test
+        </div>
+
+        <div class="btn-group col-lg-1 col-lg-offset-8 header-height">
+          <a href="#" class="header-menu dropdown-toggle" data-toggle="dropdown">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">User Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="btn-group col-lg-1 header-height">
+          <a href="#" class="header-menu dropdown-toggle" data-toggle="dropdown">City</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+    </div> <!-- row -->
+</div><!-- banner -->
+</div>
+
+        
+<div id="crpt-nav-menu" class="row col-lg-12">
+    <div class="row col-lg-12">
+
+        <div id="navbar" class="bs-component col-lg-2">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#welcome.html" alt="Home" data-toggle="tooltip" data-placement="top" data-original-title="Home"><img src="img/home.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#steps.html" alt="Steps" data-toggle="tooltip" data-placement="top" data-original-title="Steps"><img src="img/steps.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#" alt="Back" data-toggle="tooltip" data-placement="top" data-original-title="Back"><img src="img/back.jpg" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#" alt="Help" data-toggle="tooltip" data-placement="top" data-original-title="Help"><img src="img/question.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+        </div>
+
+        <div class="bs-component">
+            <div id="menu" class="col-lg-9">
+                <a class="selected" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Location">Location</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Population">Population</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Governance &amp; Policies">Governance</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Economy">Economy</a>&nbsp;&nbsp;
+                <a class="" href="city_id_built_env.html" data-toggle="tooltip" data-placement="top" data-original-title="Built Environment &amp; Critical Infrastructure">Built Environment</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Partnerships">Partnerships</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Communications">Communications</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Other Relevant Information">Other</a>&nbsp;&nbsp;
+            </div>
+        </div>
+
+    </div> <!-- row -->
+</div> <!-- crpt-nav-menu -->
+
+        
+<div id="crpt-menu_page" class="row col-lg-12">
+    <div class="row col-lg-12">
+
+        <div id="crpt-left-menu" class="col-lg-2">
+            <div class="list-group table-of-contents">
+                <a class="list-group-item" href="city_id_location_basic.html">Basic</a>
+                <a class="list-group-item" href="city_id_location_geo.html">Geographic</a>
+                <a class="list-group-item" href="city_id_location_climate.html">Climate</a>
+                <a class="list-group-item selected" href="city_id_location_other.html">Other</a>
+            </div>
+        </div>
+
+        <div id="main" class="col-lg-9">
+            <div class="bs-component">
+                <div class="well bs-component">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="inputRepresentativePlan" class="col-lg-3 control-label">Representative Plan</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="3" id="inputRepresentativePlan" placeholder="Representative Plan"></textarea>
+                                    <span class="help-block">Please provide link(s) to a masterplan or map of your city including the boundaries of your local government</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputRepresentativeView" class="col-lg-3 control-label">Representative View</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="3" id="inputRepresentativeView" placeholder="Representative View"></textarea>
+                                    <span class="help-block">Please provide link(s) to an orthophoto and/or aerial view of your city</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-3">
+                                  <button type="reset" class="btn btn-default">Cancel</button>
+                                  <button type="submit" class="btn btn-danger">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div> <!-- panel default -->
+            </div>
+        </div>
+
+    </div> <!-- row -->
+</div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

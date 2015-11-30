@@ -1,0 +1,6 @@
+# exclude .DS_Store
+.DS_Store
+
+# exclude .idea directory
+/.idea:wq!
+
