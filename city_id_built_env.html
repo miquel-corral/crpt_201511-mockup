@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> | 'CRPT - City Resilience Profile Tool'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="css/crpt.css" media="screen"></head>
+<body>
+    <div class="container">
+        
+<div id="crpt-header">
+<div class="page-header" style="margin: 18px 0px 18px;" id="banner">
+    <div class="row  header">
+        <div class="col-lg-2 header-city header-height">
+            Test
+        </div>
+
+        <div class="btn-group col-lg-1 col-lg-offset-8 header-height">
+          <a href="#" class="header-menu dropdown-toggle" data-toggle="dropdown">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">User Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="btn-group col-lg-1 header-height">
+          <a href="#" class="header-menu dropdown-toggle" data-toggle="dropdown">City</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">History</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+    </div> <!-- row -->
+</div><!-- banner -->
+</div>
+
+        
+<div id="crpt-nav-menu" class="row col-lg-12">
+    <div class="row col-lg-12">
+
+        <div id="navbar" class="bs-component col-lg-2">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#welcome.html" alt="Home" data-toggle="tooltip" data-placement="top" data-original-title="Home"><img src="img/home.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#steps.html" alt="Steps" data-toggle="tooltip" data-placement="top" data-original-title="Steps"><img src="img/steps.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#" alt="Back" data-toggle="tooltip" data-placement="top" data-original-title="Back"><img src="img/back.jpg" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+            <a href="#" alt="Help" data-toggle="tooltip" data-placement="top" data-original-title="Help"><img src="img/question.png" style="width:15px;height:15px;"/></a>&nbsp;&nbsp;
+        </div>
+
+        <div class="bs-component">
+            <div id="menu" class="col-lg-9">
+                <a class="" href="city_id_location_basic.html" data-toggle="tooltip" data-placement="top" data-original-title="Location">Location</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Population">Population</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Governance &amp; Policies">Governance</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Economy">Economy</a>&nbsp;&nbsp;
+                <a class="selected" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Built Environment &amp; Critical Infrastructure">Built Environment</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Partnerships">Partnerships</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Communications">Communications</a>&nbsp;&nbsp;
+                <a class="" href="#" data-toggle="tooltip" data-placement="top" data-original-title="Other Relevant Information">Other</a>&nbsp;&nbsp;
+            </div>
+        </div>
+
+    </div> <!-- row -->
+</div> <!-- crpt-nav-menu -->
+
+        
+<div id="crpt-menu_page" class="row col-lg-12">
+    <div class="row col-lg-12">
+
+        <div id="crpt-left-menu" class="col-lg-2">
+            <div class="list-group table-of-contents">
+                <!--
+                <a class="list-group-item" href="city_id_location_basic.html">Basic</a>
+                <a class="list-group-item" href="city_id_location_geo.html">Geographic</a>
+                <a class="list-group-item" href="city_id_location_climate.html">Climate</a>
+                <a class="list-group-item selected" href="city_id_location_other.html">Other</a>
+                -->
+            </div>
+        </div>
+
+        <div id="main" class="col-lg-9">
+            <div class="bs-component">
+                <div class="well bs-component">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="inputBuildingTopology" class="col-lg-3 control-label">Building typology(ies)</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputBuildingTopology" placeholder="Building typology(ies)"></textarea>
+                                    <span class="help-block">Ex.: single house units, condominiuns, townhouses, etc. Please specify all applicable</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputConstructionType" class="col-lg-3 control-label">Construction type(s)</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputConstructionType" placeholder="Construction type(s)"></textarea>
+                                    <span class="help-block">Ex.: masonry, stone, timber, stilt houses, etc. Please specify all applicable</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPublicTrans" class="col-lg-3 control-label">Public transportation systems</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputPublicTrans" placeholder="Public transportation systems"></textarea>
+                                    <span class="help-block">Please check all applicable modes</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputElectricity" class="col-lg-3 control-label">Electricity supply sources</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputElectricity" placeholder="Electricity supply sources"></textarea>
+                                    <span class="help-block">Ex.: hydro, coal or nuclear power plants, solar panels, wind farms, etc. Please specify type and percentage of energy used, and existence of powerplants within a 100 km radius</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputGas" class="col-lg-3 control-label">Gas supply network</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputGas" placeholder="Gas supply network"></textarea>
+                                    <span class="help-block">Please check all applicable, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputHealth" class="col-lg-3 control-label">24-Hour health care facilities</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputHealth" placeholder="24-Hour health care facilities"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputHealthOther" class="col-lg-3 control-label">Other health care facilities</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputHealthOther" placeholder="Other health care facilities"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPresons" class="col-lg-3 control-label">Prisons, detention centres</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputPresons" placeholder="Prisons, detention centres"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSport" class="col-lg-3 control-label">Sport facilities</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputSport" placeholder="Sport facilities"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputCultural" class="col-lg-3 control-label">Cultural facilities</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputCultural" placeholder="Cultural facilities"></textarea>
+                                    <span class="help-block">Ex.: libraries, concert halls, museums, cultural centres, religious temples, etc. Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSchools" class="col-lg-3 control-label">Schools</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputSchools" placeholder="Schools"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputUniversities" class="col-lg-3 control-label">Universities</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputUniversities" placeholder="Universities"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAirports" class="col-lg-3 control-label">Airports</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputAirports" placeholder="Airports"></textarea>
+                                    <span class="help-block">Number of facilities within urban area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAirports" class="col-lg-3 control-label">Airports</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputAirports" placeholder="Airports"></textarea>
+                                    <span class="help-block">Within influence area, If any. Please specify use (ex.: public, private, military, out of service)</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputRailway" class="col-lg-3 control-label">Long-distance railway networks</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputRailway" placeholder="Long-distance railway networks"></textarea>
+                                    <span class="help-block">Within influence area, If any. Please specify use (ex.: passenger, cargo; public, private, military, out of service)</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputHarbours" class="col-lg-3 control-label">Harbours/ports</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputHarbours" placeholder="Harbours/ports"></textarea>
+                                    <span class="help-block">Within influence area, If any. Please specify use (ex.: passenger, cargo; public, private, military, out of service)</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputIndustrial" class="col-lg-3 control-label">Industrial Areas</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputIndustrial" placeholder="Industrial Areas"></textarea>
+                                    <span class="help-block">Number of industrial complexes/parks/zones within influence area, if any</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEvents" class="col-lg-3 control-label">Events with high concentration of people</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputEvents" placeholder="Events with high concentration of people"></textarea>
+                                    <span class="help-block">Relevant events/gatherings associated to tourism, sport, political, cultural or religious matters, if any. Please specify frequency</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputOther" class="col-lg-3 control-label">Other relevant information</label>
+                                <div class="col-lg-9">
+                                    <textarea class="form-control" rows="2" id="inputOther" placeholder="Other relevant information"></textarea>
+                                    <span class="help-block">Other critical infrastructure in influence area, if any</span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-3">
+                                  <button type="reset" class="btn btn-default">Cancel</button>
+                                  <button type="submit" class="btn btn-danger">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div> <!-- panel default -->
+            </div>
+        </div>
+
+    </div> <!-- row -->
+</div>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
