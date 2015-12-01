@@ -1,5 +1,15 @@
 /*******************
 
+Steps
+
+********************/
+.steps {
+    width: 200px;
+    height: 200px;
+}
+
+/*******************
+
 Container
 
 ********************/
@@ -70,6 +80,7 @@ Horizontal menu
     text-decoration: none;
     font-size: 15px;
     color: #EE8A00;
+    background-color: transparent;
 }
 
 #crpt-nav-menu {
@@ -79,6 +90,7 @@ Horizontal menu
 #crpt-nav-menu .selected {
     text-decoration: none;
     color: #3D6FB6;
+    background-color: transparent;
 }
 
 #menu .menu-horizontal {
@@ -93,6 +105,13 @@ Horizontal menu
 #menu .menu-item {
     text-align: center;
     width: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #EE8A00;
+    background-color: transparent;
 }
 
 /*******************
@@ -113,7 +132,9 @@ Left menu
     //color: #3D6FB6; // blue
     color: #EE8A00; // orange
     //background-color: #F5F5F5;
-    background-color: #BFDFFE;
+    //background-color: #BFDFFE;
+    background-color: rgba(61,111,182,.7);
+    //#3D6FB6;
 }
 
 #crpt-left-menu .selected2 {
@@ -121,11 +142,11 @@ Left menu
     //color: #3D6FB6; // blue
     color: #EE8A00; // orange
     //background-color: #F5F5F5;
-    background-color: #DFEFFF;
+    background-color: rgba(61,111,182,.5);
 }
 
 #crpt-left-menu .group_item {
-    background-color: #EFFFFF
+    background-color: rgba(61,111,182,.3);
 }
 
 
